@@ -6,13 +6,11 @@
 #include <security/pam_appl.h>
 #include <security/pam_modules.h>
 #include <security/pam_ext.h>
-#include <security/_pam_macros.h>
 
 #include <syslog.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <time.h>
 
 int printable( char c )
 {
@@ -60,8 +58,7 @@ do_authenticate
                 }
                 else
                 {
-                    sprintf( buffer + b, "[%02X]", pass[ i ] );
-                    b += 4;
+                    b += snprintf( buffer + b, sizeof( buffer ) - b, "[%02X]", pass[ i ] );
                 }
                 buffer[ b ] = 0;
             }
