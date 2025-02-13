@@ -1,5 +1,5 @@
 # pamlog
-PAM module to add logging of authentication attempts.  This can be useful to determine what kinds of attacks are being attempted.  Installing the module as listed below means it will not see valid password authentication attempts.  Also note that it's generally good practice to disable unused authentication methods.  For SSH, it's generally good practice to disable PAM and password authentication altogether to rely solely on public key authentication (using the built-in PKI can make this simple while avoiding locking yourself out so easily).
+PAM module to add logging of authentication attempts.  This can be useful to determine what kinds of attacks are being attempted.  Also note that it's generally good practice to disable unused authentication methods.  For SSH, it's generally good practice to disable PAM and password authentication altogether to rely solely on public key authentication (using the built-in PKI can make this simple while avoiding locking yourself out so easily).
 
 To install this PAM module, you can try `make install`, but your system may not use `/lib64/security/` for PAM modules, so be careful to find the correct location.  If you have trouble building it, make sure you have the appropriate development package for PAM installed (e.g., `pam-dev` or `pam-devel` typically).
 
