@@ -15,5 +15,5 @@ Feb 13 08:45:01 [redacted] sshd-session[25708]: pam_log(sshd:auth): newuser:[08]
 Feb 13 08:45:12 [redacted] sshd-session[25711]: pam_log(sshd:auth): newuser:[08][0A][0D][7F]INCO@36.134.96.76
 Feb 13 08:45:48 [redacted] sshd-session[25714]: pam_log(sshd:auth): builder:[08][0A][0D][7F]@195.19.97.203
 ```
-As you can see, the output uses the format: `<user>:<password>@<host>` and non-printable charcters are shown as hex values inside of brackets (e.g., `[0A]`).
+As you can see, the output uses the format: `<user>:<password>@<host>` and non-printable characters are shown as hex values inside of brackets (e.g., `[0A]`).
 
