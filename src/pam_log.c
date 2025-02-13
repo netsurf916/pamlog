@@ -50,7 +50,7 @@ do_authenticate
             int b = 0;
             for( int i = 0; i < strlen( pass ); ++i )
             {
-                if( ( b + 4 ) >= sizeof( buffer ) )
+                if( ( b + 5 ) >= sizeof( buffer ) )
                 {
                     break;
                 }
